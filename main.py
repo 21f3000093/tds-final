@@ -123,7 +123,7 @@ def Solve_Unknown_Task(question):
         "model": "gpt-4o-mini",
         "messages": [{"role": "user", "content": question + " return only the answer"}],
     }
-    API_KEY = "eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6IjIzZjIwMDM3NTFAZHMuc3R1ZHkuaWl0bS5hYy5pbiJ9.twnougmakpXTfQUGrtiBUc2WSRe8LAROPEuPSC3RXSw"
+    API_KEY = "eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6IjIxZjMwMDAwOTNAZHMuc3R1ZHkuaWl0bS5hYy5pbiJ9.HQ8dT8G8EYJQU2s3OioTgsvIOUiuLwsGhUYELw7CWsQ"
     headers = {"Content-Type": "application/json", "Authorization": f"Bearer {API_KEY}"}
     response = httpx.post(
         BASE_URL + "/chat/completions", json=data, headers=headers, timeout=60
